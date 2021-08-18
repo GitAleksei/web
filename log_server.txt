@@ -1,0 +1,2 @@
+
+1. [Thu Aug 19 01:13:57 KRAT 2021] Read "src/main/resources/conf.properties"
