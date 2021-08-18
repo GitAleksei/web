@@ -19,11 +19,13 @@ public class Server {
     final List<String> validPaths;
 
     public Server(int numberOfThreads, List<String> validPaths) {
+        Logger.INSTANCE.log("Init server");
         threadPool = Executors.newFixedThreadPool(numberOfThreads);
         this.validPaths = validPaths;
     }
 
     public void listen(int port) {
+        Logger.INSTANCE.log("Server start to listen");
         try (final var serverSocket = new ServerSocket(port)) {
             while (true) {
                 final var socket = serverSocket.accept();
@@ -35,6 +37,8 @@ public class Server {
     }
 
     public void connectionHandling(Socket socket) {
+        Logger.INSTANCE.log("Socket connected " + socket);
+
         try (final var in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              final var out = new BufferedOutputStream(socket.getOutputStream())) {
 
