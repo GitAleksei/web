@@ -1,2 +1,59 @@
 
 1. [Thu Aug 19 01:13:57 KRAT 2021] Read "src/main/resources/conf.properties"
+
+1. [Thu Aug 19 01:32:46 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Thu Aug 19 01:32:46 KRAT 2021] Init server
+3. [Thu Aug 19 01:32:46 KRAT 2021] Server start to listen
+4. [Thu Aug 19 01:32:55 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=51260,localport=9999]
+5. [Thu Aug 19 01:33:17 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=49440,localport=9999]
+6. [Thu Aug 19 01:33:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=55271,localport=9999]
+7. [Thu Aug 19 01:33:21 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59253,localport=9999]
+8. [Thu Aug 19 01:33:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59254,localport=9999]
+9. [Thu Aug 19 01:33:23 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59255,localport=9999]
+10. [Thu Aug 19 01:33:24 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=58097,localport=9999]
+11. [Thu Aug 19 01:33:34 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=64148,localport=9999]
+
+1. [Thu Aug 19 18:11:42 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Thu Aug 19 18:11:42 KRAT 2021] Init server
+3. [Thu Aug 19 18:11:42 KRAT 2021] Server start to listen
+4. [Thu Aug 19 18:11:49 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61317,localport=9999]
+5. [Thu Aug 19 18:12:02 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=54616,localport=9999]
+
+1. [Thu Aug 19 18:13:29 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Thu Aug 19 18:13:29 KRAT 2021] Init server
+3. [Thu Aug 19 18:13:29 KRAT 2021] Server start to listen
+4. [Thu Aug 19 18:13:38 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=56341,localport=9999]
+
+1. [Thu Aug 19 18:15:09 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Thu Aug 19 18:15:09 KRAT 2021] Init server
+3. [Thu Aug 19 18:16:31 KRAT 2021] Server start to listen
+4. [Thu Aug 19 18:17:45 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=64593,localport=9999]
+5. [Thu Aug 19 18:17:56 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=49373,localport=9999]
+6. [Thu Aug 19 18:18:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=49530,localport=9999]
+
+1. [Thu Aug 19 18:18:45 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Thu Aug 19 18:18:46 KRAT 2021] Init server
+3. [Thu Aug 19 18:18:46 KRAT 2021] Server start to listen
+4. [Thu Aug 19 18:19:27 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=53299,localport=9999]
+5. [Thu Aug 19 18:22:38 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=57128,localport=9999]
+
+1. [Thu Aug 19 18:23:26 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Thu Aug 19 18:23:26 KRAT 2021] Init server
+3. [Thu Aug 19 18:23:26 KRAT 2021] Server start to listen
+4. [Thu Aug 19 18:23:26 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=64847,localport=9999]
+5. [Thu Aug 19 18:23:40 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=64845,localport=9999]
+6. [Thu Aug 19 18:27:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=65533,localport=9999]
+8. [Thu Aug 19 18:27:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=51802,localport=9999]
+7. [Thu Aug 19 18:27:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=50161,localport=9999]
+
+1. [Thu Aug 19 18:28:30 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Thu Aug 19 18:28:30 KRAT 2021] Init server
+3. [Thu Aug 19 18:28:30 KRAT 2021] Server start to listen
+4. [Thu Aug 19 18:28:32 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=54004,localport=9999]
+5. [Thu Aug 19 18:28:32 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=54005,localport=9999]
+6. [Thu Aug 19 18:28:36 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62036,localport=9999]
+7. [Thu Aug 19 18:28:50 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=51361,localport=9999]
+8. [Thu Aug 19 18:28:58 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=52753,localport=9999]
+9. [Thu Aug 19 18:29:13 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=65417,localport=9999]
+10. [Thu Aug 19 18:29:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=52635,localport=9999]
+11. [Thu Aug 19 18:29:32 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=54534,localport=9999]
