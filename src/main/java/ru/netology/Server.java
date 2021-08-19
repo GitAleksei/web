@@ -6,22 +6,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Server {
-    final ExecutorService threadPool;
-    final List<String> validPaths;
+    private final ExecutorService threadPool;
+    private final Map<String, Map<String, Handler>> handlers;
 
-    public Server(int numberOfThreads, List<String> validPaths) {
+    public Server(int numberOfThreads) {
         Logger.INSTANCE.log("Init server");
         threadPool = Executors.newFixedThreadPool(numberOfThreads);
-        this.validPaths = validPaths;
+        handlers = new ConcurrentHashMap<>();
     }
 
     public void listen(int port) {
@@ -44,7 +42,7 @@ public class Server {
 
             // read only request line for simplicity
             // must be in form GET /path HTTP/1.1
-            final var requestLine = in.readLine();
+            var requestLine = in.readLine();
             final var parts = requestLine.split(" ");
 
             if (parts.length != 3) {
@@ -53,50 +51,22 @@ public class Server {
             }
 
             final var path = parts[1];
-            if (!validPaths.contains(path)) {
-                out.write((
-                        "HTTP/1.1 404 Not Found\r\n" +
-                                "Content-Length: 0\r\n" +
-                                "Connection: close\r\n" +
-                                "\r\n"
-                ).getBytes());
-                out.flush();
-                return;
+            final var requestMethod = parts[0];
+            StringBuilder stringBuilder = new StringBuilder();
+            while (!(requestLine = in.readLine()).equals("")) {
+                stringBuilder.append(requestLine);
             }
+            final var requestHeadlines = stringBuilder.toString();
+            Request request = new Request(requestMethod, path, requestHeadlines, in);
 
-            final var filePath = Path.of(".", "public", path);
-            final var mimeType = Files.probeContentType(filePath);
-
-            // special case for classic
-            if (path.equals("/classic.html")) {
-                final var template = Files.readString(filePath);
-                final var content = template.replace(
-                        "{time}",
-                        LocalDateTime.now().toString()
-                ).getBytes();
-                out.write((
-                        "HTTP/1.1 200 OK\r\n" +
-                                "Content-Type: " + mimeType + "\r\n" +
-                                "Content-Length: " + content.length + "\r\n" +
-                                "Connection: close\r\n" +
-                                "\r\n"
-                ).getBytes());
-                out.write(content);
-                out.flush();
-                return;
+            if (!handlers.containsKey(request.getMethod())) {
+                sendMethodNotAllowed(out);
+            } else if (!handlers.get(request.getMethod()).containsKey(request.getFilePath())) {
+                sendNotFound(out);
+            } else {
+                handlers.get(request.getMethod()).get(request.getFilePath())
+                        .handle(request, out);
             }
-
-            final var length = Files.size(filePath);
-            out.write((
-                    "HTTP/1.1 200 OK\r\n" +
-                            "Content-Type: " + mimeType + "\r\n" +
-                            "Content-Length: " + length + "\r\n" +
-                            "Connection: close\r\n" +
-                            "\r\n"
-            ).getBytes());
-            Files.copy(filePath, out);
-            out.flush();
-
         } catch (IOException ex) {
             Logger.INSTANCE.log(Arrays.toString(ex.getStackTrace()) + " " + ex.getMessage());
         } finally {
@@ -106,5 +76,33 @@ public class Server {
                 Logger.INSTANCE.log(Arrays.toString(ex.getStackTrace()) + " " + ex.getMessage());
             }
         }
+    }
+
+    private void sendNotFound(BufferedOutputStream out) throws IOException {
+        out.write((
+                "HTTP/1.1 404 Not Found\r\n" +
+                        "Content-Length: 0\r\n" +
+                        "Connection: close\r\n" +
+                        "\r\n"
+        ).getBytes());
+        out.flush();
+    }
+
+    private void sendMethodNotAllowed(BufferedOutputStream out) throws IOException {
+        out.write((
+                "HTTP/1.1 405 Method Not Allowed\r\n" +
+                        "Content-Length: 0\r\n" +
+                        "Connection: close\r\n" +
+                        "\r\n"
+        ).getBytes());
+        out.flush();
+    }
+
+    public void addHandler(String requestMethod, String filePath, Handler handler) {
+        if (!handlers.containsKey(requestMethod)) {
+            handlers.put(requestMethod, new ConcurrentHashMap<>());
+        }
+
+        handlers.get(requestMethod).put(filePath, handler);
     }
 }
