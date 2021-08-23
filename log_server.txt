@@ -128,3 +128,26 @@
 7. [Mon Aug 23 18:58:22 KRAT 2021] Request{method='GET', filePath='/forms.html', queryParams=null}
 8. [Mon Aug 23 18:58:27 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=57511,localport=9999]
 9. [Mon Aug 23 18:58:27 KRAT 2021] Request{method='GET', filePath='/forms.html', queryParams=[?login=123, password=345]}
+
+1. [Mon Aug 23 20:44:16 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 20:44:16 KRAT 2021] Init server
+3. [Mon Aug 23 20:44:16 KRAT 2021] Server start to listen
+4. [Mon Aug 23 20:44:26 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62649,localport=9999]
+5. [Mon Aug 23 20:44:26 KRAT 2021] Request{method='GET', filePath='/index.html', queryParams=null}
+6. [Mon Aug 23 20:44:26 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62652,localport=9999]
+7. [Mon Aug 23 20:44:59 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62679,localport=9999]
+8. [Mon Aug 23 20:44:59 KRAT 2021] Request{method='GET', filePath='/forms.html', queryParams=null}
+9. [Mon Aug 23 20:45:07 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62685,localport=9999]
+10. [Mon Aug 23 20:47:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62830,localport=9999]
+11. [Mon Aug 23 20:47:28 KRAT 2021] Request{method='GET', filePath='/index.html', queryParams=null}
+12. [Mon Aug 23 20:47:42 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62842,localport=9999]
+13. [Mon Aug 23 20:47:42 KRAT 2021] Request{method='GET', filePath='/forms.html', queryParams=null}
+14. [Mon Aug 23 20:47:54 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62853,localport=9999]
+15. [Mon Aug 23 20:47:56 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62861,localport=9999]
+16. [Mon Aug 23 20:49:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=62912,localport=9999]
+
+1. [Mon Aug 23 20:54:20 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 20:54:20 KRAT 2021] Init server
+3. [Mon Aug 23 20:54:20 KRAT 2021] Server start to listen
+4. [Mon Aug 23 20:54:27 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=63139,localport=9999]
+5. [Mon Aug 23 20:54:27 KRAT 2021] Method not processed: POST

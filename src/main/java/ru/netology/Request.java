@@ -3,20 +3,19 @@ package ru.netology;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 
-import java.io.BufferedReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class Request {
     private final String method;
     private final String filePath;
-    private final String headlines;
-    private final BufferedReader body;
+    private final List<String> headers;
+    private final String body;
     private List<NameValuePair> queryParams;
 
-    public Request(String method, String filePath, String headlines, BufferedReader body) {
+    public Request(String method, String filePath, List<String> headers, String body) {
         this.method = method;
-        this.headlines = headlines;
+        this.headers = headers;
         this.body = body;
 
         int indexOfStart = filePath.indexOf('?');
