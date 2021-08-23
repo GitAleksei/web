@@ -42,10 +42,9 @@ public class Server {
              final var out = new BufferedOutputStream(socket.getOutputStream())) {
 
             // лимит на request line + заголовки
-            final var limit = 4096;
 
-            in.mark(limit);
-            final var buffer = new byte[limit];
+            in.mark(Conf.LIMIT_OF_HEADERS);
+            final var buffer = new byte[Conf.LIMIT_OF_HEADERS];
             final var read = in.read(buffer);
 
             // ищем request line
