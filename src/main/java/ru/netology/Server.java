@@ -58,6 +58,7 @@ public class Server {
             }
             final var requestHeadlines = stringBuilder.toString();
             Request request = new Request(requestMethod, path, requestHeadlines, in);
+            Logger.INSTANCE.log(request.toString());
 
             if (!handlers.containsKey(request.getMethod())) {
                 sendMethodNotAllowed(out);

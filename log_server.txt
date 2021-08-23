@@ -57,3 +57,74 @@
 9. [Thu Aug 19 18:29:13 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=65417,localport=9999]
 10. [Thu Aug 19 18:29:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=52635,localport=9999]
 11. [Thu Aug 19 18:29:32 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=54534,localport=9999]
+
+1. [Mon Aug 23 18:40:55 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 18:40:55 KRAT 2021] Init server
+3. [Mon Aug 23 18:40:55 KRAT 2021] Server start to listen
+4. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59288,localport=9999]
+5. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59289,localport=9999]
+6. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59290,localport=9999]
+7. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59291,localport=9999]
+8. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59292,localport=9999]
+9. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59293,localport=9999]
+10. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59294,localport=9999]
+11. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59295,localport=9999]
+12. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59296,localport=9999]
+13. [Mon Aug 23 18:42:39 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59297,localport=9999]
+14. [Mon Aug 23 18:43:18 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59321,localport=9999]
+15. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59322,localport=9999]
+16. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59323,localport=9999]
+17. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59324,localport=9999]
+18. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59325,localport=9999]
+19. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59326,localport=9999]
+20. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59327,localport=9999]
+21. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59328,localport=9999]
+22. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59329,localport=9999]
+23. [Mon Aug 23 18:43:19 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=59330,localport=9999]
+
+1. [Mon Aug 23 18:43:35 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 18:43:35 KRAT 2021] Init server
+3. [Mon Aug 23 18:43:35 KRAT 2021] Server start to listen
+4. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61471,localport=9999]
+5. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61472,localport=9999]
+6. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61473,localport=9999]
+7. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61474,localport=9999]
+8. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61475,localport=9999]
+9. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61476,localport=9999]
+10. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61477,localport=9999]
+11. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61478,localport=9999]
+12. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61479,localport=9999]
+13. [Mon Aug 23 18:44:28 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61480,localport=9999]
+
+1. [Mon Aug 23 18:50:21 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 18:50:21 KRAT 2021] Init server
+3. [Mon Aug 23 18:50:21 KRAT 2021] Server start to listen
+4. [Mon Aug 23 18:50:24 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61775,localport=9999]
+5. [Mon Aug 23 18:50:36 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61781,localport=9999]
+6. [Mon Aug 23 18:50:42 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61783,localport=9999]
+
+1. [Mon Aug 23 18:52:50 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 18:52:50 KRAT 2021] Init server
+3. [Mon Aug 23 18:52:50 KRAT 2021] Server start to listen
+4. [Mon Aug 23 18:52:56 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61864,localport=9999]
+5. [Mon Aug 23 18:52:56 KRAT 2021] Request{method='GET', filePath='/forms.html', headlines='Host: localhost:9999User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateConnection: keep-aliveCookie: Idea-c818600a=e7824e5a-b56f-44c9-b612-f73c67fe0f44Upgrade-Insecure-Requests: 1Sec-Fetch-Dest: documentSec-Fetch-Mode: navigateSec-Fetch-Site: noneSec-Fetch-User: ?1', queryParams=[/forms.html?login=sgsr, password=erge]}
+6. [Mon Aug 23 18:53:04 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61874,localport=9999]
+7. [Mon Aug 23 18:53:04 KRAT 2021] Request{method='GET', filePath='/forms.html', headlines='Host: localhost:9999User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateConnection: keep-aliveReferer: http://localhost:9999/forms.html?login=sgsr&password=ergeCookie: Idea-c818600a=e7824e5a-b56f-44c9-b612-f73c67fe0f44Upgrade-Insecure-Requests: 1Sec-Fetch-Dest: documentSec-Fetch-Mode: navigateSec-Fetch-Site: same-originSec-Fetch-User: ?1', queryParams=[/forms.html?login=er, password=dvd]}
+
+1. [Mon Aug 23 18:55:02 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 18:55:02 KRAT 2021] Init server
+3. [Mon Aug 23 18:55:02 KRAT 2021] Server start to listen
+4. [Mon Aug 23 18:55:06 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=57322,localport=9999]
+5. [Mon Aug 23 18:55:07 KRAT 2021] Request{method='GET', filePath='/index.html', queryParams=null}
+6. [Mon Aug 23 18:55:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=57377,localport=9999]
+7. [Mon Aug 23 18:55:22 KRAT 2021] Request{method='GET', filePath='/index.html', queryParams=[/index.html?value=299]}
+
+1. [Mon Aug 23 18:57:53 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Mon Aug 23 18:57:53 KRAT 2021] Init server
+3. [Mon Aug 23 18:57:53 KRAT 2021] Server start to listen
+4. [Mon Aug 23 18:58:01 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=57480,localport=9999]
+5. [Mon Aug 23 18:58:01 KRAT 2021] Request{method='GET', filePath='/index.html', queryParams=[?value=299]}
+6. [Mon Aug 23 18:58:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=57510,localport=9999]
+7. [Mon Aug 23 18:58:22 KRAT 2021] Request{method='GET', filePath='/forms.html', queryParams=null}
+8. [Mon Aug 23 18:58:27 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=57511,localport=9999]
+9. [Mon Aug 23 18:58:27 KRAT 2021] Request{method='GET', filePath='/forms.html', queryParams=[?login=123, password=345]}
