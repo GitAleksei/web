@@ -151,3 +151,17 @@
 3. [Mon Aug 23 20:54:20 KRAT 2021] Server start to listen
 4. [Mon Aug 23 20:54:27 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=63139,localport=9999]
 5. [Mon Aug 23 20:54:27 KRAT 2021] Method not processed: POST
+
+1. [Tue Aug 24 01:36:55 KRAT 2021] Read "src/main/resources/conf.properties"
+2. [Tue Aug 24 01:36:55 KRAT 2021] Init server
+3. [Tue Aug 24 01:36:55 KRAT 2021] Server start to listen
+4. [Tue Aug 24 01:37:04 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61604,localport=9999]
+5. [Tue Aug 24 01:37:04 KRAT 2021] Request{method='GET', filePath='/index.html', queryParams=null}
+6. [Tue Aug 24 01:37:04 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61605,localport=9999]
+7. [Tue Aug 24 01:37:04 KRAT 2021] Bad request line
+8. [Tue Aug 24 01:37:16 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61613,localport=9999]
+9. [Tue Aug 24 01:37:16 KRAT 2021] Request{method='GET', filePath='/forms.html', queryParams=null}
+10. [Tue Aug 24 01:37:22 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61620,localport=9999]
+11. [Tue Aug 24 01:37:22 KRAT 2021] Request{method='POST', filePath='/forms.html', queryParams=[login=er, password=123]}
+12. [Tue Aug 24 01:37:29 KRAT 2021] Socket connected Socket[addr=/127.0.0.1,port=61624,localport=9999]
+13. [Tue Aug 24 01:37:29 KRAT 2021] Request{method='POST', filePath='/forms.html', queryParams=[login=ыаыа, password=sdf]}

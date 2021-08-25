@@ -142,7 +142,7 @@ public class Server {
         handlers.get(requestMethod).put(filePath, handler);
     }
 
-    private static Optional<String> extractHeader(List<String> headers, String header) {
+    public static Optional<String> extractHeader(List<String> headers, String header) {
         return headers.stream()
                 .filter(o -> o.startsWith(header))
                 .map(o -> o.substring(o.indexOf(" ")))

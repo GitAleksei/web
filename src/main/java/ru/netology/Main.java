@@ -48,6 +48,21 @@ public class Main {
       }
     }
 
+    server.addHandler("POST", "/forms.html", ((request, responseStream) -> {
+      final var filePath = Path.of(".", "public", request.getFilePath());
+      final var mimeType = Files.probeContentType(filePath);
+      final var length = Files.size(filePath);
+      responseStream.write((
+              "HTTP/1.1 200 OK\r\n" +
+                      "Content-Type: " + mimeType + "\r\n" +
+                      "Content-Length: " + length + "\r\n" +
+                      "Connection: close\r\n" +
+                      "\r\n"
+      ).getBytes());
+      Files.copy(filePath, responseStream);
+      responseStream.flush();
+    }));
+
     server.listen(PORT);
   }
 }

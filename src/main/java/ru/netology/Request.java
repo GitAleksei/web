@@ -26,6 +26,15 @@ public class Request {
             queryParams = URLEncodedUtils.parse(filePath.substring(indexOfStart + 1),
                     StandardCharsets.UTF_8);
         }
+
+        if (method.equals("POST")) {
+            final var contentType = Server.extractHeader(headers, "Content-Type");
+            if (contentType.isPresent()) {
+                if (contentType.get().equals("application/x-www-form-urlencoded")) {
+                    queryParams = URLEncodedUtils.parse(body, StandardCharsets.UTF_8);
+                }
+            }
+        }
     }
 
     public String getMethod() {
