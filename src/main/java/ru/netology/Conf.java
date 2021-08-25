@@ -13,6 +13,7 @@ public class Conf {
     public static int PORT;
     public static List<String> VALID_PATH;
     public static int NUMBER_OF_THREADS;
+    public static int LIMIT_OF_HEADERS;
 
     static {
         Properties properties = new Properties();
@@ -23,6 +24,7 @@ public class Conf {
             PORT = Integer.parseInt(properties.getProperty("PORT"));
             NUMBER_OF_THREADS = Integer.parseInt(properties.getProperty("NUMBER_OF_THREADS"));
             VALID_PATH = List.of(properties.getProperty("VALID_PATH").split(" "));
+            LIMIT_OF_HEADERS = Integer.parseInt(properties.getProperty("LIMIT_OF_HEADERS"));
 
             Logger.INSTANCE.log("Read \"" + SETTINGS_FILE_NAME + "\"");
         } catch (IOException ex) {
